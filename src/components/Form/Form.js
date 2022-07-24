@@ -15,7 +15,10 @@ class Form extends Component {
     handleInputChange = e => {
         this.setState({
             [e.currentTarget.name]: e.currentTarget.value,
-              id: shortid.generate() })
+          id: shortid.generate()
+        })
+      
+    
    }
 
   reset = () => this.setState({ name: '', id: '' });
