@@ -1,5 +1,6 @@
 import React from 'react';
 import './Filter.css'
+import PropTypes from 'prop-types'
 
 const Filter = ({value, onChange}) => {
     return ( 
@@ -13,34 +14,12 @@ const Filter = ({value, onChange}) => {
  
 export default Filter;
 
+Filter.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
 
 
 
-// import React, { Component } from 'react';
 
-
-// class Filter extends Component {
-//     state = { 
-//         filter:'',
-//     } 
-    
-//     handleInputChange = e => {
-//         e.preventDefault()
-//         console.log(e.currentTarget.value);
-      
-        
-//     }
-        
-//         render() { 
-//         return (
-//             <label>
-//         Find contacts by name
-//         <br />
-//         <input type='text' value={this.props.value} onChange={this.handleInputChange}/>
-//     </label>
-//         );
-//     }
-// }
- 
-// export default Filter;
 
