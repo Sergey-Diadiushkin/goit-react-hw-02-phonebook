@@ -4,9 +4,9 @@ import React from 'react';
 
 
 const Contacts = ({ contacts, onDeleteContact }) => (
-    <ul className='contactListItem'>
+    <ul className='contactList'>
         {contacts.map(({ name, id, number }) =>
-            <li  key={id}>
+            <li className='contactListItem'  key={id}>
                 {name}: {number}
                 <button onClick={()=>onDeleteContact(id) }>Delete</button>
         </li>)}

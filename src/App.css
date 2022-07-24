@@ -37,7 +37,12 @@
   }
 }
 .ContactForm{
-  border: 1px solid black;
-  max-width: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* border: 2px solid black;
+  border-radius: 10px;
+  max-width: 600px; */
   padding: 14px;
+  /* margin-bottom: 5px; */
 }
