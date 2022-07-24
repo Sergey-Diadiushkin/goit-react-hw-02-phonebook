@@ -60,7 +60,7 @@ class App extends Component {
           <Form onSubmit={this.addContact}  />
        </Section>
         <Section title='Contacts'>
-          <Filter value={filter}  />
+          <Filter value={filter} onChange={this.handleInputChange} />
           <Contacts contacts={filteredContacts} onDeleteContact={this.deleteContact} />
 </Section>
       </Container >
