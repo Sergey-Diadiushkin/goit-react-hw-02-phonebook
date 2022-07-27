@@ -36,7 +36,7 @@
     transform: rotate(360deg);
   }
 }
-.ContactForm{
+.ContactForm {
   display: flex;
   align-items: center;
   flex-direction: column;
